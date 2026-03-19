@@ -1,0 +1,16 @@
+1)Query :- Chicken and Macaroni Loaf recipie
+
+Chunking strategy="Recursive", No of tokens=706,Response :- Not found
+
+Chunking strategy="Token Chunking strategy",No of tokens=270 , Response :- Not found
+
+Chunking strategy="Character chunking strategy" -->no of tokens :-312,Response :-generated
+
+2)Different types of cookies
+
+Chunking strategy="Character chunking strategy" -->no of tokens :-312,Response :-generated
+Chunking strategy="Recursive", No of tokens=706, Response :- generated
+Chunking strategy="Token Chunking strategy", No of tokens=270,Response :- generated 
+
+
+****Attached the responses in screenshots folder

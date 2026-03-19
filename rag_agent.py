@@ -51,7 +51,7 @@ LLM_MODEL = "gpt-4.1-mini"
 #   0.0 = deterministic (same answer every time) - best for factual Q&A
 #   0.7 = creative (varied answers) - better for brainstorming
 #   1.0 = very creative (may hallucinate more)
-TEMPERATURE = 0
+TEMPERATURE = 0.4
 
 # --------------------------------------------------------------------------
 # SYSTEM PROMPT - Students: this is the most fun part to modify!
@@ -66,10 +66,13 @@ TEMPERATURE = 0
 #   - "Answer in bullet points only."
 #   - "If you're not sure, list what you DO know and what's missing."
 #
-SYSTEM_PROMPT = """You are a helpful assistant. Answer the user's question based ONLY \
-on the following context from retrieved documents.
-
+SYSTEM_PROMPT = """You are a cooking assistant.You must be describing the steps as a guide for making a recipie
+GUIDELINES:
+   - Lists ingredients first, then step-by-step instructions
+   - Suggests substitutions for common allergens
+   - Adds estimated cooking time and difficulty level
 RULES:
+
 1. Only use information from the provided context below.
 2. If the context does not contain enough information, say so honestly.
 3. At the end of your answer, add a "Sources:" section listing which \
